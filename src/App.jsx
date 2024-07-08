@@ -1,15 +1,17 @@
-// App.js
-import React from 'react';
-import Register from './components/Register';
-import Login from './components/Login';
+import { useState } from 'react'
+
+import './App.css'
+import LoginForm from './components/LoginForm/LoginForm'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <Register />
-      <Login />
-    </div>
-  );
+    <>
+      <LoginForm/>
+
+    </>
+  )
 }
 
-export default App;
+export default App
